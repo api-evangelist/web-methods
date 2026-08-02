@@ -1,0 +1,22 @@
+# Web Methods (webMethods)
+
+> Web Methods (webMethods) is an enterprise integration platform pioneer, founded in 1996 to connect software applications in real time using web standards. Now part of IBM as IBM webMethods Hybrid Integration, it spans iPaaS, API management and gateway, a developer portal, B2B/EDI, messaging, managed file transfer, and event-driven integration. Backed early by Mayfield.
+
+## Product
+- [IBM webMethods Hybrid Integration](https://www.ibm.com/products/webmethods-hybrid-integration): Unified iPaaS product page (current owner: IBM).
+
+## Developer
+- [Developer Portal](https://developers.webmethods.io/): Live webMethods developer portal.
+- [Documentation](https://docs.webmethods.io/): Product and integration documentation.
+- [Getting Started](https://docs.webmethods.io/integration/starthere/home/): webMethods.io Integration overview.
+- [API Reference](https://docs.webmethods.io/saas/webmethods-integration/apis/webmethods_api_ref/index.html): IBM webMethods Integration REST API reference.
+- [Developer Portal REST APIs](https://docs.webmethods.io/api/10.11.0/webmethods_developer_portal/chapter10dpo/): Manage APIs, applications, plans, providers, teams, tokens, and webhooks (HTTP Basic auth).
+
+## Authentication
+- Developer Portal REST APIs: HTTP Basic authentication.
+- API Gateway / API Management: OAuth2 and OpenID Connect for managed APIs.
+
+## Artifacts
+- authentication/web-methods-authentication.yml
+- security/web-methods-domain-security.yml
+- security/web-methods-vulnerability-disclosure.yml

@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.webmethods.io/
+docs: https://docs.webmethods.io/api/10.11.0/webmethods_developer_portal/chapter10dpo/
+summary:
+  types:
+  - http
+  - oauth2
+  - openIdConnect
+  notes: >-
+    webMethods exposes several REST surfaces with different auth models. The
+    Developer Portal REST APIs use HTTP Basic authentication. The webMethods /
+    IBM webMethods API Gateway and API Management support OAuth2 (client
+    credentials, authorization code) and OpenID Connect for securing managed
+    APIs, alongside API-key and mutual-TLS policies configurable per API.
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  applies_to: Developer Portal REST APIs
+  source: https://docs.webmethods.io/api/10.11.0/webmethods_developer_portal/chapter10dpo/
+- name: oauth2
+  type: oauth2
+  applies_to: API Gateway / API Management managed APIs
+  flows:
+  - authorizationCode
+  - clientCredentials
+  source: https://www.linkedin.com/pulse/oauth2-webmethods-api-gateway-fabio-romana-pisciotta
+- name: openIdConnect
+  type: openIdConnect
+  applies_to: API Gateway / API Management managed APIs
+  source: https://docs.webmethods.io/

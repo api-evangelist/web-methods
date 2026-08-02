@@ -1,7 +1,27 @@
 aid: web-methods
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/web-methods.png
 name: Web Methods
-description: Web Methods is a company surfaced as a portfolio company of mayfield and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Web Methods (webMethods) is an enterprise integration platform pioneer,
+  founded in 1996 by Phillip and Caren Merrick in Fairfax, Virginia to connect software
+  applications in real time using web standards such as HTTP and XML. Its 2000 IPO was
+  one of the largest first-day pops of the dot-com era. webMethods was acquired by Software
+  AG in 2007 for $546 million, and its integration portfolio - now including webMethods.io
+  Integration (iPaaS), API Gateway and API Management, the Developer Portal, B2B/EDI,
+  messaging, managed file transfer, and event-driven integration - was acquired by IBM
+  in July 2024 as IBM webMethods Hybrid Integration. Mayfield was an early venture backer
+  of the company.
 url: https://raw.githubusercontent.com/api-evangelist/web-methods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,49 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Integration
+- iPaaS
+- API Management
+- API Gateway
+- Enterprise Integration
+- B2B
+- EDI
+- Developer Portal
+- Middleware
+- ESB
+- Event-Driven
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/web-methods-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.ibm.com/trust/security-psirt
+- type: DomainSecurity
+  url: security/web-methods-domain-security.yml
+- type: Authentication
+  url: authentication/web-methods-authentication.yml
+- type: LLMsTxt
+  url: llms/web-methods-llms.txt
+- type: Website
+  url: https://www.ibm.com/products/webmethods-hybrid-integration
+- type: DeveloperPortal
+  url: https://developers.webmethods.io/
+- type: Documentation
+  url: https://docs.webmethods.io/
+- type: APIReference
+  url: https://docs.webmethods.io/saas/webmethods-integration/apis/webmethods_api_ref/index.html
+- type: GettingStarted
+  url: https://docs.webmethods.io/integration/starthere/home/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
