@@ -13,15 +13,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/web-methods.png
 name: Web Methods
-description: Web Methods (webMethods) is an enterprise integration platform pioneer,
-  founded in 1996 by Phillip and Caren Merrick in Fairfax, Virginia to connect software
-  applications in real time using web standards such as HTTP and XML. Its 2000 IPO was
-  one of the largest first-day pops of the dot-com era. webMethods was acquired by Software
-  AG in 2007 for $546 million, and its integration portfolio - now including webMethods.io
-  Integration (iPaaS), API Gateway and API Management, the Developer Portal, B2B/EDI,
-  messaging, managed file transfer, and event-driven integration - was acquired by IBM
-  in July 2024 as IBM webMethods Hybrid Integration. Mayfield was an early venture backer
-  of the company.
+description: Web Methods (webMethods) is an enterprise integration platform pioneer, founded in 1996 by Phillip
+  and Caren Merrick in Fairfax, Virginia to connect software applications in real time using web standards such
+  as HTTP and XML. Its 2000 IPO was one of the largest first-day pops of the dot-com era. webMethods was acquired
+  by Software AG in 2007 for $546 million, and its integration portfolio - now including webMethods.io Integration
+  (iPaaS), API Gateway and API Management, the Developer Portal, B2B/EDI, messaging, managed file transfer, and
+  event-driven integration - was acquired by IBM in July 2024 as IBM webMethods Hybrid Integration. Mayfield was
+  an early venture backer of the company.
 url: https://raw.githubusercontent.com/api-evangelist/web-methods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Integration
@@ -47,6 +45,12 @@ tags:
 - Event-Driven
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/software-ag/
+  name: Software AG
+  x-relationship: acquisition
+  x-generated-by: ibm-family:2026-08-21
+  x-acquired: 2007
 - type: VulnerabilityDisclosure
   url: security/web-methods-vulnerability-disclosure.yml
 - type: Security
@@ -77,3 +81,6 @@ x-enrichment:
   status: enriched
   artifacts_added: 4
   pass: local-v1
+x-parent: software-ag
+x-relationship: acquisition
+x-acquired: 2007
